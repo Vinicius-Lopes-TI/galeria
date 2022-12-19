@@ -1,4 +1,12 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "ready!" );
+    var gallery = $('.gallery a').simpleLightbox({
+        
+            /* options */
+            sourceAttr:'href',
+            nav:true,
+
+        
+        });
+        
 });
