@@ -1,1 +1,27 @@
 @charset "UTF-8";
+
+.gallery a.big img {
+  width: 40%;
+}
+
+.gallery a img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  -moz-transition: -moz-transform 0.15s ease;
+  -o-transition: -o-transform 0.15s ease;
+  -ms-transition: -ms-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  position: relative;
+}
+
+.gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
